@@ -1,0 +1,29 @@
+.listing{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.listing span{
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.circleProgress{
+    width: 30px;
+position: absolute;
+right:0px;
+top:-20px;
+}
+
+.circleProgress::before{
+        content: '';
+        width: 20px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: #398ffc;
+        position: absolute;
+        left: 5px;
+        bottom: -10px;
+}

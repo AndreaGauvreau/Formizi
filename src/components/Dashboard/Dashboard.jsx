@@ -1,11 +1,22 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../../App';
+import LittleMenu from './LittleMenu/LittleMenu';
+import ReprendreBouton from './ReprendreBouton/ReprendreBouton';
+import './DashBoard.css'
+import ProfilMenu from './ProfilMenus/ProfilMenu';
+import ListingSection from './ListingLesson/ListingSection';
 
-const Dashboard = () => {
+const Dashboard = ({darkMode, setDarkMode}) => {
     const theme= useContext(ThemeContext)
-    return (
+    return (<div className='Dashboard'>
+        <div className='dashboardheader'>
+            <LittleMenu setDarkMode={setDarkMode} darkMode={darkMode}/>
+            <ReprendreBouton/>
+            <ProfilMenu/>
+        </div>
         <div>
-            <h2 style={{color: theme.color1}}>dashbaord</h2>
+            <ListingSection/>
+        </div>
         </div>
     );
 };

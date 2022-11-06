@@ -1,0 +1,15 @@
+.dashboardheader{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Dashboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin-top: 50px;
+}
