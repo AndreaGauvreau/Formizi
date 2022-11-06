@@ -26,7 +26,7 @@ export const lessonData=[{
                     {
                         name: 'Gérer les situations délicates',
                         id: 6,
-                        Progression:10,
+                        Progression:0,
                         },
                         {
                             name: 'Gérer les situations délicates',

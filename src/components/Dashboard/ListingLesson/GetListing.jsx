@@ -23,8 +23,8 @@ export const GetListingComplete = () => {
             position:'relative'}}>{e.name}
             <div className='circleProgress'>
             <CircularProgressbar value={e.Progression} strokeWidth={30} styles={{
-                path: {stroke:theme.color3, strokeLinecap: 'butt'}, 
-                trail: {stroke: theme.color1}}} /></div></span></>
+                path: {stroke:theme.color1, strokeLinecap: 'butt'}, 
+                trail: {stroke: theme.color4}}} /></div></span></>
             )} 
         </div>
     );
@@ -43,7 +43,7 @@ export const GetListingProgress = () => {
             <div className='circleProgress'>
             <CircularProgressbar value={e.Progression} strokeWidth={30} styles={{
                 path: {stroke:theme.color7, strokeLinecap: 'butt'}, 
-                trail: {stroke: theme.color1}}} /></div></span></>
+                trail: {stroke: theme.color3}}} /></div></span></>
             )} 
         </div>
     );
@@ -63,8 +63,8 @@ export const GetListingStart = () => {
             position:'relative'}}>{e.name}
             <div className='circleProgress'>
             <CircularProgressbar value={e.Progression} strokeWidth={30} styles={{
-                path: {stroke:theme.color4, strokeLinecap: 'butt'}, 
-                trail: {stroke: theme.color4}}} /></div></span></>
+                path: {stroke:theme.color3, strokeLinecap: 'butt'}, 
+                trail: {stroke: theme.color3}}} /></div></span></>
             )} 
         </div>
     );

@@ -12,7 +12,7 @@ const Dashboard = ({darkMode, setDarkMode}) => {
         <div className='dashboardheader'>
             <LittleMenu setDarkMode={setDarkMode} darkMode={darkMode}/>
             <ReprendreBouton/>
-            <ProfilMenu/>
+            <ProfilMenu darkMode={darkMode} setDarkMode={setDarkMode}/>
         </div>
         <div>
             <ListingSection/>
