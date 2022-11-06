@@ -8,8 +8,16 @@
 .listing span{
     padding: 20px 10px;
     border-radius: 10px;
+    transition: 0.3s;
+
 }
 
+.listing span:hover{
+   opacity: 50%;
+   transition: 0.3s;
+   cursor: pointer;
+   transform: translateX(10px);
+}
 .circleProgress{
     width: 30px;
 position: absolute;

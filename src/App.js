@@ -7,6 +7,8 @@ import Dashboard from './components/Dashboard/Dashboard';
 import { createContext } from 'react';
 import { useEffect } from 'react';
 import Switch from './components/Switch';
+import {Routes, Route} from "react-router-dom"
+import SelectFormation from './components/Dashboard/PageFormation/SelectFormation';
 
 const themes={
   dark: {
@@ -62,11 +64,14 @@ function App() {
   return (
     <ThemeContext.Provider value={theme}>
       <div className="App" style={{background: theme.background1}}>
-          <Dashboard setDarkMode={setDarkMode} darkMode={darkMode}/>
+        <Routes>
+        <Route path="/dashboard" element={<Dashboard setDarkMode={setDarkMode} darkMode={darkMode}/>} />
+        <Route path="/dashboard/formation/:id" element={<SelectFormation setDarkMode={setDarkMode} darkMode={darkMode}/>} />
 {/*          <span>{user?.displayName}</span>
           {user ?  : <ConnectModal/>}
 
         <button onClick={handleLogout}>déconnexion</button>*/}
+        </Routes>
       </div>
     </ThemeContext.Provider>
   );
