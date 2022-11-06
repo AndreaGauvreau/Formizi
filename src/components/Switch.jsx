@@ -18,6 +18,7 @@ const Switch = ({setDarkMode, darkMode}) => {
         id={`react-switch-new`}
         type="checkbox"
         onChange={handleModeChange}
+        checked={darkMode}
       />
       <label
         className="react-switch-label"

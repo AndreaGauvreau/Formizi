@@ -21,7 +21,9 @@ const themes={
     color3: '#ffffff', 
     color4: '#398ffc',
     color5: '#B2FF3E',
-    color6: '#ffffff20'
+    color6: '#ffffff20',
+    color7: '#F86E6E'
+
   },
   light: {
     background1: 'linear-gradient(230deg, #f2f2f2 0%, #ffffff 100%)',
@@ -35,7 +37,8 @@ const themes={
     color3: '#07080D', 
     color4: '#398ffc',
     color5: '#B2FF3E',
-    color6: '#00000020'
+    color6: '#00000020',
+    color7: '#F86E6E'
 
   }}
 

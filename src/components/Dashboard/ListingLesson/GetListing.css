@@ -26,4 +26,5 @@ top:-20px;
         position: absolute;
         left: 5px;
         bottom: -10px;
+        box-shadow: 2px 2px 13px 0px #000000;
 }
